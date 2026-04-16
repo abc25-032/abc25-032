@@ -1,176 +1,172 @@
-/* ====================================
-   TRIZZYY GERMAN AUTO HUB WEBSITE
-   CSS STYLESHEET
-   ==================================== */
-
-
-/* ===== GLOBAL PAGE STYLING ===== */
-
-body{
-    margin:0;
-    font-family: Arial, Helvetica, sans-serif;
-    background: linear-gradient(120deg,#0f2027,#203a43,#2c5364);
-    color:#f5f5f5;
-    line-height:1.6;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Arial, sans-serif;
 }
 
-
-/* ===== HEADER SECTION ===== */
-
-header{
-    background:#111;
-    padding:25px;
-    text-align:center;
-    border-bottom:4px solid #00bcd4;
+body {
+  background: #0b0b0b;
+  color: #fff;
 }
 
-header img{
-    width:90px;
-    display:block;
-    margin:auto;
+/* NAVBAR */
+.navbar {
+  background: #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 5%;
 }
 
-header h1{
-    margin-top:10px;
-    font-size:32px;
-    letter-spacing:2px;
+.logo img {
+  height: 40px;
 }
 
-
-/* ===== NAVIGATION BAR ===== */
-
-nav{
-    margin-top:15px;
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
 }
 
-nav a{
-    text-decoration:none;
-    color:white;
-    margin:0 18px;
-    font-size:18px;
-    font-weight:bold;
-    transition:0.3s;
+.navbar a {
+  color: white;
+  text-decoration: none;
 }
 
-nav a:hover{
-    color:#00bcd4;
+.navbar a:hover {
+  color: #f5b301;
 }
 
-
-/* ===== MAIN CONTENT CONTAINER ===== */
-
-.container{
-    width:85%;
-    margin:auto;
-    padding:30px;
+/* HERO */
+.hero {
+  padding: 40px 5%;
 }
 
-
-/* ===== HEADINGS ===== */
-
-h2{
-    color:#00bcd4;
-    font-size:28px;
-    margin-bottom:15px;
+.hero-card {
+  background: white;
+  color: #222;
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  border-radius: 6px;
+  overflow: hidden;
 }
 
-p{
-    font-size:17px;
+.hero-card img {
+  width: 100%;
+  object-fit: cover;
 }
 
-
-/* ===== FEATURE IMAGE (HOME & ABOUT) ===== */
-
-.hero-image{
-    width:100%;
-    border-radius:8px;
-    margin:20px 0;
+.hero-content {
+  padding: 30px;
 }
 
-
-/* ===== VEHICLE CARDS ===== */
-
-.car-card{
-    background:#161616;
-    padding:20px;
-    border-radius:10px;
-    text-align:center;
-    margin:20px;
-    box-shadow:0px 4px 12px rgba(0,0,0,0.6);
+/* BUTTON */
+.btn {
+  background: #f5b301;
+  padding: 10px 16px;
+  border-radius: 4px;
+  color: #000;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 10px;
 }
 
-.car-card img{
-    width:260px;
-    border-radius:8px;
+/* SECTIONS */
+.section {
+  padding: 40px 5%;
 }
 
-.car-card h3{
-    margin-top:10px;
+.card {
+  background: white;
+  color: #222;
+  padding: 25px;
+  border-radius: 6px;
 }
 
-
-/* ===== MODELS TABLE ===== */
-
-table{
-    width:100%;
-    border-collapse:collapse;
-    margin-top:25px;
+/* FEATURES */
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
 }
 
-table th{
-    background:#00bcd4;
-    color:black;
-    padding:14px;
+/* TABLE */
+table {
+  width: 100%;
+  border-collapse: collapse;
 }
 
-table td{
-    padding:14px;
-    border:1px solid #333;
-    text-align:center;
+th {
+  background: #111;
+  color: white;
+  padding: 10px;
 }
 
-table tr:nth-child(even){
-    background:#1c1c1c;
+td {
+  padding: 10px;
+  border-top: 1px solid #ddd;
 }
 
-
-/* ===== GALLERY SECTION ===== */
-
-.gallery{
-    text-align:center;
+/* GALLERY */
+.filter-input {
+  width: 100%;
+  padding: 10px;
+  margin: 15px 0;
 }
 
-.gallery img{
-    width:280px;
-    margin:15px;
-    border-radius:10px;
-    box-shadow:0 4px 10px rgba(0,0,0,0.5);
-    transition:0.3s;
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
 }
 
-.gallery img:hover{
-    transform:scale(1.05);
+.car-item img {
+  width: 100%;
+  border-radius: 6px;
 }
 
-
-/* ===== CONTACT INFORMATION ===== */
-
-.contact-box{
-    background:#161616;
-    padding:25px;
-    border-radius:10px;
-    box-shadow:0 4px 12px rgba(0,0,0,0.5);
-    max-width:500px;
+/* CONTACT */
+.contact-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 20px;
 }
 
+.contact-box {
+  background: #111;
+  color: white;
+  padding: 20px;
+}
 
-/* ===== FOOTER ===== */
+/* FOOTER */
+footer {
+  background: black;
+  color: #777;
+  text-align: center;
+  padding: 15px;
+}
 
-footer{
-    background:#000;
-    text-align:center;
-    padding:18px;
-    margin-top:40px;
-    font-size:15px;
-    border-top:3px solid #00bcd4;
+/* WHATSAPP */
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25D366;
+  color: white;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 26px;
+}
+
+/* MOBILE */
+@media (max-width: 900px) {
+  .hero-card,
+  .contact-wrapper {
+    grid-template-columns: 1fr;
+  }
 }
