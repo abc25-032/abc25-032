@@ -1,19 +1,18 @@
 body{
+font-family: Arial, sans-serif;
 margin:0;
-font-family:Arial, Helvetica, sans-serif;
-background:linear-gradient(135deg,#0f172a,#1e293b);
+background: linear-gradient(135deg,#0f2027,#203a43,#2c5364);
 color:white;
+text-align:center;
 }
 
 header{
-background:#020617;
+background:#0d47a1;
 padding:20px;
-text-align:center;
-border-bottom:3px solid #38bdf8;
 }
 
-header img{
-width:90px;
+.logo{
+width:80px;
 }
 
 nav{
@@ -22,74 +21,98 @@ margin-top:10px;
 
 nav a{
 color:white;
+margin:15px;
 text-decoration:none;
-margin:10px;
 font-weight:bold;
-padding:8px 15px;
-border-radius:5px;
-transition:0.3s;
+font-size:18px;
 }
 
 nav a:hover{
-background:#38bdf8;
-color:black;
-}
-
-.container{
-width:90%;
-max-width:1100px;
-margin:auto;
-padding:20px;
+color:#ffd700;
 }
 
 .hero{
-background:url("../images/showroom.jpg");
-background-size:cover;
-background-position:center;
-height:420px;
-display:flex;
-align-items:center;
-justify-content:center;
+padding:40px;
 }
 
-.hero h1{
-background:rgba(0,0,0,0.6);
-padding:20px;
+.content{
+padding:40px;
+}
+
+.showroom{
+width:70%;
 border-radius:10px;
+margin-top:20px;
 }
 
 .cars{
 display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:25px;
+}
+
+.car{
+background:#123;
+padding:20px;
+border-radius:12px;
+width:260px;
+transition: transform 0.3s;
+box-shadow:0 5px 15px rgba(0,0,0,0.4);
+}
+
+.car:hover{
+transform:scale(1.05);
+}
+
+.car img{
+width:100%;
+border-radius:10px;
+}
+
+.gallery{
+display:flex;
 flex-wrap:wrap;
 justify-content:center;
-}
-
-.car-card{
-background:#020617;
-margin:15px;
-padding:15px;
-border-radius:10px;
-width:260px;
-text-align:center;
-box-shadow:0 6px 18px rgba(0,0,0,0.5);
-}
-
-.car-card img{
-width:100%;
-border-radius:8px;
+gap:20px;
 }
 
 .gallery img{
-width:260px;
-margin:10px;
+width:320px;
 border-radius:10px;
-box-shadow:0 5px 15px rgba(0,0,0,0.5);
+transition: transform 0.3s;
+}
+
+.gallery img:hover{
+transform:scale(1.05);
+}
+
+.btn{
+display:inline-block;
+background:#ff9800;
+padding:10px 22px;
+margin-top:10px;
+color:white;
+text-decoration:none;
+border-radius:6px;
+font-weight:bold;
+transition: background 0.3s;
+}
+
+.btn:hover{
+background:#e68900;
+}
+
+input, textarea{
+width:300px;
+padding:10px;
+margin:10px;
+border-radius:5px;
+border:none;
 }
 
 footer{
-background:#020617;
-text-align:center;
+background:#0d47a1;
 padding:15px;
 margin-top:40px;
-border-top:3px solid #38bdf8;
 }
