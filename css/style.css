@@ -1,67 +1,131 @@
+/* GENERAL PAGE SETTINGS */
+
 body{
-font-family: Arial;
+font-family: Arial, sans-serif;
 margin:0;
+padding:0;
 text-align:center;
 }
 
-/* background image for home and about */
+
+/* BACKGROUND FOR HOME AND ABOUT */
 
 .home{
-background-image:url("images/showroom.jpg");
-background-size:cover;
-background-position:center;
+background-image: url("images/showroom.jpg");
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
 color:white;
+min-height:100vh;
 }
 
-/* navigation */
+
+/* HEADER */
+
+header{
+background-color:white;
+padding:15px;
+}
+
+
+/* LOGO */
+
+header img{
+display:block;
+margin:auto;
+}
+
+
+/* NAVIGATION BAR */
 
 nav{
-margin:20px;
+margin-top:15px;
 }
 
 nav a{
-margin:10px;
 text-decoration:none;
-color:blue;
+margin:10px;
+font-size:18px;
 font-weight:bold;
+color:#003366;
 }
 
-/* explore models button */
+nav a:hover{
+color:red;
+}
+
+
+/* WELCOME SECTION */
+
+.welcome{
+margin-top:100px;
+}
+
+
+/* BUTTON */
 
 .modelbtn{
 background-color:red;
 color:white;
 padding:12px 25px;
-border:none;
 font-size:16px;
+border:none;
+border-radius:5px;
 cursor:pointer;
 }
 
-/* car models */
+.modelbtn:hover{
+background-color:darkred;
+}
+
+
+/* MODELS PAGE */
 
 .models{
 display:flex;
 justify-content:center;
-gap:40px;
 flex-wrap:wrap;
+gap:40px;
 margin-top:40px;
 }
 
 .car{
 border:1px solid lightgray;
-padding:15px;
+padding:20px;
+width:320px;
+background:white;
 }
 
-/* gallery */
+.car img{
+width:100%;
+}
+
+
+/* GALLERY PAGE */
+
+.gallery{
+margin-top:40px;
+}
 
 .gallery img{
+width:300px;
 margin:15px;
+border:2px solid lightgray;
 }
 
-/* footer */
+
+/* CONTACT PAGE */
+
+section{
+margin-top:40px;
+padding:20px;
+}
+
+
+/* FOOTER */
 
 footer{
 margin-top:40px;
+background:#eeeeee;
 padding:10px;
-background:#eee;
 }
