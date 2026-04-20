@@ -1,13 +1,30 @@
 body{
 font-family: Arial, sans-serif;
 margin:0;
-background: linear-gradient(135deg,#0f2027,#203a43,#2c5364);
 color:white;
 text-align:center;
 }
 
+/* Background images */
+
+.home-bg{
+background-image:url("../images/showroom.jpg");
+background-size:cover;
+background-position:center;
+min-height:100vh;
+}
+
+.about-bg{
+background-image:url("../images/showroom.jpg");
+background-size:cover;
+background-position:center;
+min-height:100vh;
+}
+
+/* Header */
+
 header{
-background:#0d47a1;
+background:rgba(13,71,161,0.9);
 padding:20px;
 }
 
@@ -31,19 +48,19 @@ nav a:hover{
 color:#ffd700;
 }
 
+/* Sections */
+
 .hero{
-padding:40px;
+padding:60px;
+background:rgba(0,0,0,0.6);
 }
 
 .content{
-padding:40px;
+padding:50px;
+background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
 }
 
-.showroom{
-width:70%;
-border-radius:10px;
-margin-top:20px;
-}
+/* Car cards */
 
 .cars{
 display:flex;
@@ -57,7 +74,7 @@ background:#123;
 padding:20px;
 border-radius:12px;
 width:260px;
-transition: transform 0.3s;
+transition:0.3s;
 box-shadow:0 5px 15px rgba(0,0,0,0.4);
 }
 
@@ -70,6 +87,8 @@ width:100%;
 border-radius:10px;
 }
 
+/* Gallery */
+
 .gallery{
 display:flex;
 flex-wrap:wrap;
@@ -80,11 +99,29 @@ gap:20px;
 .gallery img{
 width:320px;
 border-radius:10px;
-transition: transform 0.3s;
+transition:0.3s;
 }
 
 .gallery img:hover{
 transform:scale(1.05);
+}
+
+/* Buttons */
+
+.explore-btn{
+display:inline-block;
+background:#28a745;
+padding:12px 25px;
+margin-top:15px;
+color:white;
+text-decoration:none;
+border-radius:6px;
+font-weight:bold;
+font-size:18px;
+}
+
+.explore-btn:hover{
+background:#1e7e34;
 }
 
 .btn{
@@ -96,12 +133,13 @@ color:white;
 text-decoration:none;
 border-radius:6px;
 font-weight:bold;
-transition: background 0.3s;
 }
 
 .btn:hover{
 background:#e68900;
 }
+
+/* Contact form */
 
 input, textarea{
 width:300px;
@@ -111,8 +149,10 @@ border-radius:5px;
 border:none;
 }
 
+/* Footer */
+
 footer{
 background:#0d47a1;
 padding:15px;
-margin-top:40px;
 }
+
