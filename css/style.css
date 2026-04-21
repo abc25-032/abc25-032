@@ -1,121 +1,76 @@
-/* ===== GENERAL PAGE STYLE ===== */
-
 body{
-font-family: Arial, Helvetica, sans-serif;
+font-family: Arial, sans-serif;
 margin:0;
-padding:0;
-background-image:url("images/showroom.jpg");
-background-size:cover;
-background-position:center;
-background-attachment:fixed;
 color:white;
 }
 
-/* ===== HEADER ===== */
+.home{
+background-image:url("../images/showroom.jpg");
+background-size:cover;
+background-position:center;
+}
+
+.about{
+background-image:url("../images/showroom.jpg");
+background-size:cover;
+background-position:center;
+}
 
 header{
-background:rgba(0,0,0,0.75);
+background:#0b3d91;
 text-align:center;
-padding:25px;
+padding:20px;
 }
-
-header img{
-width:80px;
-}
-
-header h1{
-margin:10px;
-font-size:30px;
-}
-
-/* ===== NAVIGATION ===== */
 
 nav a{
 color:white;
+margin:15px;
 text-decoration:none;
-margin:0 15px;
 font-weight:bold;
 }
 
-nav a:hover{
-color:#00c3ff;
+.hero{
+padding:100px;
+text-align:center;
+background:rgba(0,0,0,0.6);
 }
 
-/* ===== MAIN CONTENT ===== */
-
-main{
-background:rgba(0,0,0,0.65);
-margin:40px auto;
-padding:30px;
-width:85%;
-border-radius:10px;
+.content{
+padding:40px;
+text-align:center;
+background:rgba(0,0,0,0.7);
 }
 
-/* ===== BUTTON ===== */
-
-.button{
-display:inline-block;
-background:#00c3ff;
-color:white;
-padding:12px 20px;
-margin-top:15px;
+.btn{
+background:#ffcc00;
+padding:15px 25px;
+color:black;
 text-decoration:none;
-border-radius:6px;
 font-weight:bold;
+border-radius:5px;
 }
 
-.button:hover{
-background:#0077ff;
-}
-
-/* ===== CAR CARDS ===== */
-
-.car-container{
+.cars{
 display:flex;
 flex-wrap:wrap;
 justify-content:center;
-gap:25px;
-margin-top:20px;
+gap:30px;
 }
 
 .car{
-background:#111;
+background:#1b1b1b;
 padding:20px;
 border-radius:10px;
-width:220px;
-text-align:center;
-box-shadow:0 5px 15px rgba(0,0,0,0.5);
+width:250px;
 }
 
 .car img{
 width:100%;
-border-radius:8px;
+border-radius:10px;
 }
-
-.car h3{
-margin-top:10px;
-}
-
-/* ===== GALLERY ===== */
-
-.gallery{
-display:flex;
-flex-wrap:wrap;
-justify-content:center;
-gap:20px;
-}
-
-.gallery img{
-width:250px;
-border-radius:8px;
-box-shadow:0 5px 10px rgba(0,0,0,0.5);
-}
-
-/* ===== FOOTER ===== */
 
 footer{
+background:#0b3d91;
 text-align:center;
-background:rgba(0,0,0,0.8);
 padding:15px;
-margin-top:40px;
 }
