@@ -1,25 +1,38 @@
+/* GENERAL */
+
 body{
 font-family: Arial, sans-serif;
 margin:0;
 color:white;
+background:#111;
 }
 
+/* SHOWROOM BACKGROUND WITH OVERLAY */
+
 .home{
-background-image:url("../images/showroom.jpg");
+background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url("../images/showroom.jpg");
 background-size:cover;
 background-position:center;
+background-attachment:fixed;
 }
 
 .about{
-background-image:url("../images/showroom.jpg");
+background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url("../images/showroom.jpg");
 background-size:cover;
 background-position:center;
+background-attachment:fixed;
 }
+
+/* HEADER */
 
 header{
 background:#0b3d91;
 text-align:center;
 padding:20px;
+}
+
+header img{
+margin-bottom:10px;
 }
 
 nav a{
@@ -29,39 +42,76 @@ text-decoration:none;
 font-weight:bold;
 }
 
-.hero{
-padding:100px;
-text-align:center;
-background:rgba(0,0,0,0.6);
+nav a:hover{
+color:#ffcc00;
 }
+
+/* HERO SECTION */
+
+.hero{
+padding:100px 40px;
+text-align:center;
+background:rgba(0,0,0,0.55);
+backdrop-filter:blur(4px);
+}
+
+/* CONTENT SECTION */
 
 .content{
-padding:40px;
+padding:50px;
 text-align:center;
-background:rgba(0,0,0,0.7);
+background:rgba(0,0,0,0.75);
 }
 
-.btn{
-background:#ffcc00;
-padding:15px 25px;
+/* BUTTONS */
+
+.btn-models{
+background:linear-gradient(45deg,#ffcc00,#ffa000);
+padding:15px 30px;
 color:black;
 text-decoration:none;
 font-weight:bold;
-border-radius:5px;
+border-radius:10px;
+display:inline-block;
+margin-top:20px;
 }
+
+.btn-testdrive{
+background:linear-gradient(45deg,#00c853,#009624);
+padding:10px 20px;
+color:white;
+text-decoration:none;
+border-radius:8px;
+display:inline-block;
+margin-top:10px;
+}
+
+.btn-contact{
+background:linear-gradient(45deg,#ff5252,#d50000);
+padding:15px 25px;
+color:white;
+text-decoration:none;
+border-radius:10px;
+display:inline-block;
+margin-top:20px;
+}
+
+/* CARS GRID */
 
 .cars{
 display:flex;
 flex-wrap:wrap;
 justify-content:center;
 gap:30px;
+margin-top:30px;
 }
 
 .car{
-background:#1b1b1b;
+background:#1c1c1c;
 padding:20px;
 border-radius:10px;
 width:250px;
+box-shadow:0 5px 15px rgba(0,0,0,0.6);
 }
 
 .car img{
@@ -69,8 +119,18 @@ width:100%;
 border-radius:10px;
 }
 
+/* GALLERY */
+
+.cars img{
+width:250px;
+border-radius:10px;
+}
+
+/* FOOTER */
+
 footer{
 background:#0b3d91;
 text-align:center;
 padding:15px;
+margin-top:40px;
 }
