@@ -56,7 +56,24 @@ color:white;
 background:url("../images/showroom.jpg") center/cover no-repeat;
 }
 
-/* ===== MODELS (FIXED) ===== */
+/* ===== EXPLORE BUTTON (FIXED LIGHT BLUE) ===== */
+.explore-btn{
+background:#3498db;
+color:white;
+padding:12px 25px;
+border:none;
+border-radius:6px;
+cursor:pointer;
+transition:0.3s;
+font-weight:bold;
+}
+
+.explore-btn:hover{
+background:#2980b9;
+transform:scale(1.05);
+}
+
+/* ===== MODELS ===== */
 .car-container{
 display:flex;
 flex-wrap:wrap;
@@ -85,7 +102,7 @@ object-fit:cover;
 border-radius:8px;
 }
 
-/* BUTTONS */
+/* MODEL BUTTONS */
 .details-btn{
 background:#3498db;
 color:white;
@@ -106,7 +123,7 @@ margin:5px;
 cursor:pointer;
 }
 
-/* ===== GALLERY (FIXED GRID) ===== */
+/* ===== GALLERY ===== */
 .gallery-grid{
 display:grid;
 grid-template-columns:repeat(2, 1fr);
@@ -129,7 +146,7 @@ margin-top:8px;
 font-weight:bold;
 }
 
-/* ===== SERVICES (RESTORED CARDS) ===== */
+/* ===== SERVICES ===== */
 .service-container{
 display:flex;
 flex-wrap:wrap;
@@ -163,7 +180,7 @@ flex-direction:column;
 align-items:center;
 }
 
-/* INPUTS FIXED */
+/* INPUTS */
 .contact-form input,
 .contact-form textarea{
 width:300px;
