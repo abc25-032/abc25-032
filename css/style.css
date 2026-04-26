@@ -33,7 +33,7 @@ nav a:hover{
 color:orange;
 }
 
-/* ===== GLOBAL BACKGROUND ===== */
+/* ===== BACKGROUND ===== */
 .page-bg{
 background:url("../images/showroom.jpg") center/cover no-repeat;
 min-height:100vh;
@@ -56,12 +56,114 @@ color:white;
 background:url("../images/showroom.jpg") center/cover no-repeat;
 }
 
-/* ===== CONTACT IMPROVEMENTS ===== */
+/* ===== MODELS (FIXED) ===== */
+.car-container{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:20px;
+}
+
+.car-card{
+background:white;
+padding:15px;
+width:250px;
+border-radius:10px;
+box-shadow:0 4px 12px rgba(0,0,0,0.3);
+text-align:center;
+transition:0.3s;
+}
+
+.car-card:hover{
+transform:translateY(-8px);
+}
+
+.car-card img{
+width:100%;
+height:160px;
+object-fit:cover;
+border-radius:8px;
+}
+
+/* BUTTONS */
+.details-btn{
+background:#3498db;
+color:white;
+padding:8px;
+border:none;
+border-radius:5px;
+margin:5px;
+cursor:pointer;
+}
+
+.test-btn{
+background:#2ecc71;
+color:white;
+padding:8px;
+border:none;
+border-radius:5px;
+margin:5px;
+cursor:pointer;
+}
+
+/* ===== GALLERY (FIXED GRID) ===== */
+.gallery-grid{
+display:grid;
+grid-template-columns:repeat(2, 1fr);
+gap:20px;
+}
+
+.gallery-item{
+text-align:center;
+}
+
+.gallery-item img{
+width:100%;
+height:180px;
+object-fit:cover;
+border-radius:10px;
+}
+
+.gallery-item p{
+margin-top:8px;
+font-weight:bold;
+}
+
+/* ===== SERVICES (RESTORED CARDS) ===== */
+.service-container{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:20px;
+}
+
+.service-card{
+background:#1c1c1c;
+color:white;
+padding:20px;
+width:220px;
+border-radius:10px;
+box-shadow:0 4px 10px rgba(0,0,0,0.5);
+text-align:center;
+transition:0.3s;
+}
+
+.service-card:hover{
+transform:translateY(-6px);
+}
+
+/* ===== CONTACT ===== */
 .contact{
 text-align:center;
 }
 
-/* INPUTS (NO MORE PLAIN WHITE) */
+.contact-form{
+display:flex;
+flex-direction:column;
+align-items:center;
+}
+
+/* INPUTS FIXED */
 .contact-form input,
 .contact-form textarea{
 width:300px;
@@ -79,8 +181,6 @@ color:#ccc;
 }
 
 /* BUTTONS */
-
-/* TEL NOW ORANGE */
 .tel-btn{
 background:orange;
 color:white;
@@ -91,11 +191,6 @@ border-radius:5px;
 font-weight:bold;
 }
 
-.tel-btn:hover{
-background:#e67e22;
-}
-
-/* EMAIL */
 .email-btn{
 background:#8e44ad;
 color:white;
@@ -105,7 +200,6 @@ margin:10px;
 border-radius:5px;
 }
 
-/* WHATSAPP */
 .whatsapp-btn{
 background:#25D366;
 color:white;
@@ -115,7 +209,6 @@ margin:10px;
 border-radius:5px;
 }
 
-/* SUBMIT */
 .submit-btn{
 background:#f39c12;
 color:white;
